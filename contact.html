@@ -342,7 +342,46 @@
       </div>
     </section>
     <!-- Search model end -->
+<!-- Add this script at the end of your body tag -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select the form
+    const contactForm = document.querySelector(".leave-comment form");
 
+    // Add an event listener for the form submission
+    contactForm.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Get the form values
+      const name = document.querySelector('input[name="Name"]').value;
+      const email = document.querySelector('input[name="email"]').value;
+      const phone = document.querySelector('input[name="phone"]').value;
+      const membershipPlan = document.querySelector('select[name="Membership Plan"]').value;
+      const about = document.querySelector('textarea[name="about them"]').value;
+
+      // Validate the form fields
+      if (!name || !email || !phone || membershipPlan === "Membership Plan") {
+        alert("Please fill out all required fields.");
+        return;
+      }
+
+      // Format the message
+      const message = `Hello, I would like to inquire about the gym membership. Here are my details:
+      - Name: ${name}
+      - Email: ${email}
+      - Phone: ${phone}
+      - Membership Plan: ${membershipPlan}
+      - About Me: ${about}`;
+
+      // Encode the message for the WhatsApp URL
+      const encodedMessage = encodeURIComponent(message);
+
+      // Open WhatsApp with the pre-filled message
+      const whatsappUrl = `https://wa.me/8459498206?text=${encodedMessage}`;
+      window.open(whatsappUrl, "_blank");
+    });
+  });
+</script>
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
