@@ -9,4 +9,5 @@ Disallow: \Parul-gym\parul-gym\Source
 Disallow: \Parul-gym\parul-gym\index.html
 Disallow: \Parul-gym\parul-gym\contact.html
 Disallow: \Parul-gym\parul-gym\gallery.html
+Disallow: \Parul-gym\parul-gym\fonts
 
