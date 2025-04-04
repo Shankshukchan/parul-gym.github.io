@@ -1,6 +1,5 @@
 
 User-agent: *
-Disallow: 
 Disallow: \Parul-gym\parul-gym\js
 Disallow: \Parul-gym\parul-gym\img
 Disallow: \Parul-gym\parul-gym\css
