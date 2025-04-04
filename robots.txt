@@ -1,13 +1,13 @@
 
 User-agent: *
 Disallow: 
-Disallow: .\parul-gym\js
-Disallow: .\parul-gym\img
-Disallow: .\parul-gym\css
-Disallow: .\parul-gym\.git
-Disallow: .\parul-gym\404.html
-Disallow: .\parul-gym\Source
-Disallow: .\parul-gym\index.html
-Disallow: .\parul-gym\contact.html
-Disallow: .\parul-gym\gallery.html
+Disallow: \Parul-gym\parul-gym\js
+Disallow: \Parul-gym\parul-gym\img
+Disallow: \Parul-gym\parul-gym\css
+Disallow: \Parul-gym\parul-gym\.git
+Disallow: \Parul-gym\parul-gym\404.html
+Disallow: \Parul-gym\parul-gym\Source
+Disallow: \Parul-gym\parul-gym\index.html
+Disallow: \Parul-gym\parul-gym\contact.html
+Disallow: \Parul-gym\parul-gym\gallery.html
 
